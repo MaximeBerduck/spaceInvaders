@@ -21,4 +21,9 @@ public class Vaisseau {
 	public int abscisse() {
         return this.x;
 	}
+
+	public void seDeplacerVersLaGauche() {
+		this.x = this.x - 1;
+		
+	}
 }
