@@ -112,6 +112,10 @@ public class SpaceInvaders implements Jeu {
 			tirerUnMissile(new Dimension(Constante.MISSILE_LONGUEUR, Constante.MISSILE_HAUTEUR),
 					Constante.MISSILE_VITESSE);
 		}
+		
+		if(this.aUnMissile()) {
+			this.deplacerMissile();
+		}
 
 	}
 
@@ -141,5 +145,15 @@ public class SpaceInvaders implements Jeu {
 
 	public Missile recuperMissile() {
 		return this.missile;
+	}
+
+	public void deplacerMissile() {
+		if(this.aUnMissile()) {
+			this.missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
+			if(this.missile.ordonneeLaPlusBasse() < 0) {
+				this.missile = null;
+			}
+		}
+		
 	}
 }
