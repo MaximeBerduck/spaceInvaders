@@ -1,9 +1,9 @@
-package fr.unilim.fr.spaceinvaders;
+package fr.unilim.iut.spaceinvaders;
 
-import fr.unilim.fr.spaceinvaders.utils.DebordementEspaceJeuException;
-import fr.unilim.fr.spaceinvaders.utils.HorsEspaceJeuException;
-import fr.unilim.fr.spaceinvaders.utils.MissileException;
 import fr.unilim.iut.spaceinvaders.moteurjeu.*;
+import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
+import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
+import fr.unilim.iut.spaceinvaders.utils.MissileException;
 
 public class SpaceInvaders implements Jeu {
 

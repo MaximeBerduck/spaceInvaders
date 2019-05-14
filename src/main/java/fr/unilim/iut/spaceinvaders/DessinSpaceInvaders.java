@@ -1,4 +1,4 @@
-package fr.unilim.fr.spaceinvaders;
+package fr.unilim.iut.spaceinvaders;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
