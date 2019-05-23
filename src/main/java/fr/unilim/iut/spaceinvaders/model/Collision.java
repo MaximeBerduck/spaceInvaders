@@ -48,7 +48,7 @@ public class Collision {
 		return temp;
 	}
 
-	public static Object detecterCollision(Sprite sprite1, Sprite sprite2) {
+	public static boolean detecterCollision(Sprite sprite1, Sprite sprite2) {
 		boolean temp = false;
 		if (null != sprite1 && null != sprite2) {
 			if (sprite1DansSprite2(sprite1, sprite2)) {

@@ -136,7 +136,13 @@ public class SpaceInvaders implements Jeu {
 
 	@Override
 	public boolean etreFini() {
-		return false;
+		boolean temp = false;
+		if(this.aUnEnvahisseur() && this.aUnMissile()) {
+			if(Collision.detecterCollision(this.recuperMissile(), this.recupererEnvahisseur())) {
+				temp = true;
+			}
+		}
+		return temp;
 	}
 
 	public Vaisseau recupererVaisseau() {

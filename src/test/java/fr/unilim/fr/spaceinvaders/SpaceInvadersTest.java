@@ -466,6 +466,19 @@ import fr.unilim.iut.spaceinvaders.utils.MissileException;
 		        "...............\n" + 
 		        "...............\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
 		    }
+		     
+		    @Test
+		    public void test_finPartieApresCollision() {
+				spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(7, 2), new Position(3, 1), 1);
+				spaceinvaders.positionnerUnNouveauVaisseau(new Dimension(7, 2), new Position(5, 9), 1);
+				spaceinvaders.tirerUnMissile(new Dimension(3, 2), 2);
+
+				spaceinvaders.deplacerMissile();
+				spaceinvaders.deplacerMissile();
+				spaceinvaders.deplacerMissile();
+				
+				assertEquals(true, spaceinvaders.etreFini());
+		    }
 
 
     }
