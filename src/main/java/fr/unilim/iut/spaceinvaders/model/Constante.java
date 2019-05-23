@@ -25,5 +25,7 @@ public class Constante {
 	
 	public static final String DROITE = "Droite";
 	public static final String GAUCHE = "Gauche";
+	
+	public static final int ESPACE_ENTRE_MISSILE = 60;
 
 }
