@@ -14,18 +14,18 @@ public class Constante {
 	static final char MARQUE_VAISSEAU = 'V';
 	public static final char MARQUE_MISSILE = 'M';
 	public static final char MARQUE_ENVAHISSEUR = 'E';
-	
+
 	public static final int MISSILE_LONGUEUR = 10;
-	public static final int MISSILE_HAUTEUR = 20;
+	public static final int MISSILE_HAUTEUR = 80;
 	public static final int MISSILE_VITESSE = 20;
-	
+
 	public static final int ENVAHISSEUR_LONGUEUR = 30;
 	public static final int ENVAHISSEUR_HAUTEUR = 20;
 	public static final int ENVAHISSEUR_VITESSE = 10;
-	
+
 	public static final String DROITE = "Droite";
 	public static final String GAUCHE = "Gauche";
-	
+
 	public static final int ESPACE_ENTRE_MISSILE_VAISSEAU = 60;
 
 }
